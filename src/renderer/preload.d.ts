@@ -2,15 +2,16 @@ declare global {
   interface Window {
     electron: {
       ipcRenderer: {
-        myPing(): void;
+        minWindow(): void
+        closeWindow(): void
         on(
           channel: string,
           func: (...args: unknown[]) => void
-        ): (() => void) | undefined;
-        once(channel: string, func: (...args: unknown[]) => void): void;
-      };
-    };
+        ): (() => void) | undefined
+        once(channel: string, func: (...args: unknown[]) => void): void
+      }
+    }
   }
 }
 
-export {};
+export {}

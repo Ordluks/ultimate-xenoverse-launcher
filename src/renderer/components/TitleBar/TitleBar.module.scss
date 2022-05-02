@@ -1,0 +1,52 @@
+@import 'src/renderer/variables.scss';
+
+$height: 30px;
+
+.wrapper {
+  height: $height;
+  background: $titleBarBgColor;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  user-select: none;
+}
+
+.dragable {
+  -webkit-app-region: drag;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.title {
+  color: $titleBarTextColor;
+}
+
+.buttons {
+  button {
+    height: $height;
+    width: $height + 20;
+    background: 0;
+    border: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      height: 35%;
+
+      * {
+        fill: white
+      }
+    }
+
+    &.min:hover {
+      background: rgb(43, 43, 43);
+    }
+
+    &.close:hover {
+      background: rgb(194, 22, 22);
+    }
+  }
+}

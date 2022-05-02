@@ -1,0 +1,9 @@
+@import 'src/renderer/variables.scss';
+
+.wrapper {
+  height: 70px;
+  background: $bottomBarBgColor;
+  border-top: 1px solid $bottomBarBorderColor;
+  display: flex;
+  justify-content: space-evenly;
+}

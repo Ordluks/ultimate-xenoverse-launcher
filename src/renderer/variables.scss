@@ -1,0 +1,10 @@
+$mainBgColor: rgb(32, 32, 34);
+$mainTextColor: rgb(255, 255, 255);
+$mainFontSize: 16px;
+
+$titleBarBgColor: adjust-color($color: $mainBgColor, $lightness: -3%);
+$titleBarTextColor: adjust-color($color: $mainTextColor, $lightness: -30%);
+
+$bottomBarBgColor: adjust-color($color: $mainBgColor, $lightness: 2%);
+$bottomBarBorderColor: adjust-color($color: $mainBgColor, $lightness: 7%);
+$bottomBarFontSize: $mainFontSize / 100 * 80;

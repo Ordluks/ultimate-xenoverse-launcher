@@ -1,0 +1,10 @@
+[
+  {
+    "href": "start",
+    "name": "Start Game"
+  },
+  {
+    "href": "settings",
+    "name": "Settings"
+  }
+]

@@ -9,7 +9,8 @@ module.exports = {
     'prettier/prettier': 0,
     semi: ['error', 'never'],
     quotes: ['error', 'single', { allowTemplateLiterals: true }],
-    'jsx-quotes': ['error', 'prefer-single']
+    'jsx-quotes': ['error', 'prefer-single'],
+    'react/prop-types': 'off'
   },
   parserOptions: {
     ecmaVersion: 2020,
